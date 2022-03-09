@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;}
+.main{
+    background-image: url(./c.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec{
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    margin-top: -50px;
+    border-radius: 200px;
+    }
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+label{
+    color: white;
+    font-size: 18px;
+}
+.btc{
+    background-color: red;
+    border-radius: 100px;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+input{
+    background: rgb(0, 0, 0);
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 5px 5px;
+}
+input:hover{
+
+    border-style: 0px;
+    border-bottom: 2px solid grey;
+}
+input:focus{
+    background: rgb(0, 0, 0);   
+    border-bottom: 2px solid grey;
+    outline: darkorange;
+    color: white;
+
+}
+#lb2{
+    margin-top: 20px !important;
+}
+::placeholder{
+    color: rgb(155, 155, 155)
+}
+.fa-user{
+color: white;
+font-size: 40px;
+}
+.sec0{
+    display: flex;
+    justify-content: center;
+}
