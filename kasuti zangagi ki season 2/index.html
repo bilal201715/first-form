@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        ul li {
+            flex-grow: 1;
+        }
+
+        ul :first-child {
+            flex-grow: 5;
+            width: 62px;
+            margin-top: 8px;
+            margin-left: 5px;
+            border-radius: 62px;
+        }
+
+        li a {
+            line-height: 91px;
+        }
+
+        ul li a:hover {
+            background-color: brown;
+            color: white;
+        }
+
+        #slider {
+            width: 100vw;
+        }
+
+        header {
+            background-color: grey;
+        }
+
+        .video {
+            background-color: gray;
+
+        }
+
+        #video1 {
+            margin-top: -63px;
+        }
+
+        #h1 {
+            text-align: center;
+            font-size: 50px;
+            background-color: brown;
+            color: white;
+        }
+.main{
+ background-color: gray;
+
+}
+.videos{
+   margin-left: 40px;
+}
+.footer{
+    background-color: grey;
+    text-align: center;
+    padding: 30px ;
+    height: 30px;
+    border: 5px solid black;
+    color: white;
+    font-size: 29px;
+}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <img src="logo.jpg" alt=""></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-container">
+        <img id="slider" src="slider.jpg" alt="">
+    </section>
+    <hr>
+    <h1 id="h1">All Episods</h1>
+    <div class="main">
+        
+       <div class="videos">
+        <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+        <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+        <video id="video1" controls src="ep2.mp4" width="300px" height="300px"></video>
+        <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+       </div>
+       <br>
+        
+       <div class="videos">
+        <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+        <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+        <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+        <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+       </div>
+         <br>
+         <div class="videos">
+            <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+            <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+            <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+            <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+           </div>
+           <br>
+           <div class="videos">
+            <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+            <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+            <video id="video1" controls src="demo.mp4" width="300px" height="300px"></video>
+            <video controls src="video 2.mp4" id="video2" width="300px" height="300px"></video>
+           </div>
+           
+    </div>
+    <footer class="footer"> Go To Next Page </footer>
+</body>
+
+</html>
