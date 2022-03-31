@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: montserrat;
+        }
+
+        label#logo {
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav {
+            background-color: #0082e6;
+            height: 80px;
+            width: 100%;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+            border-radius: 3px;
+
+        }
+
+        a.active,
+        a:hover {
+            background-color: #1babff;
+            transition: .5s;
+        }
+
+        .checkbtn {
+            font-size: 50px;
+            color: white;
+            float: right;
+            margin-right: 40px;
+            line-height: 80px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media screen and (max-width:952px) {
+            #logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width:858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #2c3e50;
+                top: 80px;
+                text-align: center;
+                left: -100%;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 20px;
+
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background: none;
+                color: #0082e6;
+
+            }
+
+            #check:checked~ul {
+                /* left: 0; */
+            }
+        }
+        section{
+            background: url(background.jpeg) no-repeat ;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+        p{
+            width: 300px;
+            font-size: 19px;
+            margin-top: 20px;
+            border: 5px solid white;
+        }
+        .child{
+            position: absolute;
+            right: 0;
+            color: white;
+            margin-top: 100px;
+            
+        }
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            margin-right: 20px;  
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-stack-exchange"></i>
+        </label>
+        <label id="logo">DesiignX</label>
+
+        <ul>
+            <li><a class="active" href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+       <div class="child">
+        <h1>Paragraph</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi illum, quae numquam sunt minus consectetur et dolorem nemo odit eos vitae ullam perspiciatis laborum pariatur minima, in non deserunt accusamus architecto at saepe? Sit culpNecessitatibus sunt laudantium modi recusandae in!</p>
+       </div>
+    </section>
+    <div class="main-container">
+        <h1> paragraph</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam adipisci! Voluptatibus aspernatur nobis in aliquam quas temporibus! Eaque eligendi perferendis consequuntur voluptatum ratione aspernatur repudiandae. Magni, eos culpa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellendus, rerum sint doloribus obcaecati dolorem et iusto facere, ex quae quaerat? Quae quidem eum temporibus quia adipisci ex repudiandae iusto qui quam asperiores ad cum, veniam laborum eos vero possimus sit odio commodi. Ratione laudantium atque est molestiae, adipisci quisquam voluptatum fugit facilis aliquid ex doloribus incidunt ab voluptates molestias? Enim dolorem nihil voluptatum at corrupti voluptas optio aperiam amet maxime, blanditiis non perferendis est eos dolorum porro atque velit consectetur nulla? Fugit obcaecati illum, reprehenderit, ipsam repudiandae amet facere magnam, eaque rerum esse quo? Id amet animi ratione nesciunt.
+        </p>
+    </div>
+</body>
+
+</html>
